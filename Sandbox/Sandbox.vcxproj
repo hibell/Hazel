@@ -55,22 +55,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\bin\Debug-windows-function: 012EF1F0Sandbox\</OutDir>
-    <IntDir>..\obj\Debug-windows-function: 012EF1F0Sandbox\</IntDir>
+    <OutDir>..\bin\Debug-windows-x86_64\Sandbox\</OutDir>
+    <IntDir>..\obj\Debug-windows-x86_64\Sandbox\</IntDir>
     <TargetName>Sandbox</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Release-windows-function: 012EF1F0Sandbox\</OutDir>
-    <IntDir>..\obj\Release-windows-function: 012EF1F0Sandbox\</IntDir>
+    <OutDir>..\bin\Release-windows-x86_64\Sandbox\</OutDir>
+    <IntDir>..\obj\Release-windows-x86_64\Sandbox\</IntDir>
     <TargetName>Sandbox</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\bin\Dist-windows-function: 012EF1F0Sandbox\</OutDir>
-    <IntDir>..\obj\Dist-windows-function: 012EF1F0Sandbox\</IntDir>
+    <OutDir>..\bin\Dist-windows-x86_64\Sandbox\</OutDir>
+    <IntDir>..\obj\Dist-windows-x86_64\Sandbox\</IntDir>
     <TargetName>Sandbox</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>${prj.name}\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Hazel\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -95,7 +95,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>${prj.name}\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Hazel\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -115,7 +115,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>${prj.name}\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Hazel\vendor\spdlog\include;..\Hazel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
