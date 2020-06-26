@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Hazel {
 	/*
 	 * Abstract event since you shouldn't really be able to make a KeyEvent. Instead, you will make one of the derived
