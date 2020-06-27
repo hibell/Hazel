@@ -20,10 +20,10 @@ namespace Hazel {
 		int m_KeyCode;
 	 };
 
-	class HAZEL_API KeyReleasedEvent : public KeyEvent
+	class HAZEL_API KeyPressedEvent : public KeyEvent
 	{
 	public:
-		KeyReleasedEvent(int keycode, int repeatCount)
+		KeyPressedEvent(int keycode, int repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
 		inline int GetRepeatCount() const { return m_RepeatCount; }
@@ -31,7 +31,7 @@ namespace Hazel {
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "KeyPressedEvent: " << m_KeyCode << "(" << m_RepeatCount << " repeats)";
+			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
 			return ss.str();
 		}
 
