@@ -12,7 +12,6 @@ public:
 
 	void OnUpdate() override
 	{
-		HZ_INFO("ExampleLayer::Update");
 	}
 
 	void OnImGuiRender() override
@@ -24,7 +23,6 @@ public:
 
 	void OnEvent(Hazel::Event& event) override
 	{
-		HZ_INFO("ExampleLayer: Handled event: {0}", event);
 	}
 };
 
